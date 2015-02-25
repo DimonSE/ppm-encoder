@@ -22,7 +22,7 @@ is not defined in the makefile.
 */
 
 #ifndef F_CPU
-#define F_CPU                         8000000UL        /* CPU CLOCK FREQUENCY */
+#define F_CPU                         16000000UL        /* CPU CLOCK FREQUENCY */
 #endif
 /*
 Those values are the failsafe servo values and the values for the non used channels
@@ -84,7 +84,7 @@ The RC_LOST_CHANNEL must be a value from 1 to 8.
 #define RC_LOST_CHANNEL               3      /* Defaul is the throttle channel. You can use any channel. */
 #define RC_LOST_THRESHOLD             2025   /* Any value below 1300 or above 1700 microseconds. */
 
-#define RC_PPM_OUTPUT_TYPE            1      /* 1 = POSITIVE PULSE, 0= NEGATIVE PULSE */
+#define RC_PPM_OUTPUT_TYPE            0      /* 1 = POSITIVE PULSE, 0= NEGATIVE PULSE */
 #define RC_MIN_LATENCY                0      /* 0=allow for some latency 1=minimum latency possible. */
 #define PPM_FILTER_WINDOW             3      /* ppm filter window size, larger is less jitter but longer latency, default 3, seems to work with 2 and 1 as well */
 
@@ -101,7 +101,7 @@ exactly what you are doing.
 */
 #define RC_CONSTANT_PPM_FRAME_TIME    0
 
-#define RC_PPM_GEN_CHANNELS           8       /* How many channels the PPM output frame will have. */
+#define RC_PPM_GEN_CHANNELS           6       /* How many channels the PPM output frame will have. */
 #define RC_SERVO_MIN_PW               800UL   /* in microseconds */
 #define RC_SERVO_CENTER_PW            1500UL  /* in microseconds */
 #define RC_SERVO_MAX_PW               2200UL  /* in microseconds */

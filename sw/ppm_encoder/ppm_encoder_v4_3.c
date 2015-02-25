@@ -35,7 +35,7 @@
 #define RC_SERVO_PORT                 D   /* The port for the servo pulse input. */
 
 #define RC_LED_PORT                   B  /* The port for the PPM waveform and the led. */
-#define RC_LED_PIN                    0  /* The led indicator pin. */
+#define RC_LED_PIN                    5  /* The led indicator pin. */
 
 #define RC_PPM_PORT                   B
 #define RC_PPM_PIN                    2  /* The PPM waveform output pin */

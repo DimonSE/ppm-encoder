@@ -189,7 +189,7 @@ AVRDUDE_FUSE_FLAGS += $(AVRDUDE_QUELL_PROGRESS_OUTPUT)
 ########## Normally you shouldn't need to change anything in the below lines #########
 
 #compiler flags
-      CPFLAGS = -g -Os -fverbose-asm --param inline-call-cost=2 -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-ahlms=$(<:.c=.lst)
+      CPFLAGS = -g -Os -fverbose-asm -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-ahlms=$(<:.c=.lst)
 
 #Assembler flags
 	ASFLAGS = -Wa,-gstabs  
